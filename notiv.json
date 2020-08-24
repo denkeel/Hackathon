@@ -1,10 +1,10 @@
 {
     "event": {
         "name": "",
-        "eventTime": "12:25:23",
-        "eventSystemType": "Пожар",
+        "eventTime": "12:23:53",
+        "eventSystemType": "Опасность",
         "eventStatus": "alarm",
-        "priority": "2",
-        "description": "Горит 5 этаж"
+        "priority": "1",
+        "description": "Задымление в холле"
     }
 }
