@@ -1,0 +1,10 @@
+{
+    "event": {
+        "name": "",
+        "eventTime": "12:25:23",
+        "eventSystemType": "Пожар",
+        "eventStatus": "info",
+        "priority": "1",
+        "description": "Задымление в холле"
+    }
+}

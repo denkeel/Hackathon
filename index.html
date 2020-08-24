@@ -119,15 +119,16 @@
         let dropdown = new UniversalDropdown('.bell', '.notifications');
         let notific = new Notification('notiv.json');
         setTimeout("notific.init('notiv.json'); dropdown.toggle()", 3000);
-        let t2 = setTimeout("notific.init('notiv.json')", 6000);
-        let t3 = setTimeout("notific.init('notiv.json')", 10000);
+        let t2 = setTimeout("notific.init('notiv2.json')", 6000);
+        let t3 = setTimeout("notific.init('notiv3.json')", 10000);
+        let t4 = setTimeout("notific.init('notiv4.json')", 13000);
         status();
         let statusPush = setInterval(status, 4000);
         function status() {
             fetch('status.json')
                 .then(result => result.json())
                 .then(data => {
-                    //Я просмотрел 2 млн вариантов. Иного пути не было
+                    //За 5 минут до презентации это было оптимальным решением 🙄
                     let datafire = parseInt(Math.random() * 3).toString();
                     $('.fire').css({
                         'color': color(datafire),
