@@ -27,7 +27,10 @@ class Notification {
         let $class = '';
         let time = item.eventTime;
 
-        if (item.priority === '2') {
+        if (item.priority === '3') {
+            $class = ' notification-item___green';
+        } else if
+        (item.priority === '2') {
             $class = ' notification-item___alert';
         } else if (item.priority === '1') {
             $class = ' notification-item___yellow';

@@ -426,6 +426,10 @@ body {
   background: #e8af10;
 }
 
+.notification-item___green {
+  background: #10e81b;
+}
+
 .hero {
   display: -webkit-box;
   display: -ms-flexbox;

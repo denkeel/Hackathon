@@ -2,9 +2,9 @@
     "event": {
         "name": "",
         "eventTime": "12:35:23",
-        "eventSystemType": "Пожар",
+        "eventSystemType": "Проблема устранена",
         "eventStatus": "ok",
-        "priority": "0",
-        "description": "Задымление в холле"
+        "priority": "3",
+        "description": "Пожар ликвидирован"
     }
 }
