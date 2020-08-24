@@ -1,8 +1,8 @@
 {
     "event": {
         "name": "",
-        "eventTime": "12:25:23",
-        "eventSystemType": "Пожар",
+        "eventTime": "12:26:23",
+        "eventSystemType": "Опасность",
         "eventStatus": "alarm",
         "priority": "1",
         "description": "Задымление в холле"
