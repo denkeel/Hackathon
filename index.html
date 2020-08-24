@@ -121,11 +121,13 @@
         setTimeout("notific.init('notiv.json'); dropdown.toggle()", 3000);
         let t2 = setTimeout("notific.init('notiv.json')", 6000);
         let t3 = setTimeout("notific.init('notiv.json')", 10000);
-        let statusPush = setInterval(status, 0);
+        status();
+        let statusPush = setInterval(status, 4000);
         function status() {
             fetch('status.json')
                 .then(result => result.json())
                 .then(data => {
+                    //Я просмотрел 2 млн вариантов. Иного пути не было
                     let datafire = parseInt(Math.random() * 3).toString();
                     $('.fire').css({
                         'color': color(datafire),
