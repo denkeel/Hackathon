@@ -20,7 +20,7 @@ class UniversalDropdown {
         $(this.classButton).on('click', (e) => {
             console.log($(e.target).closest(this.classDropdown).length);
             if (!$(e.target).closest(this.classDropdown).length) {
-                this._toggle(e);
+                this.toggle(e);
             }
         });
         $(document).on('click', (e) => {
@@ -36,7 +36,7 @@ class UniversalDropdown {
         });
     };
 
-    _toggle() {
+    toggle() {
         this._showStatus(this.active);
         console.log('тоглим');
         this.$dropdown.fadeToggle();
