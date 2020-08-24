@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css">
+    <title>Smart Home</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header__left">
+            <div class="header__prime-logo">SO VIA ABC™</div>
+            <div class="header__logo"><img class="header__logo-img header__logo-img_rost" src="img/header-logo1.png"
+                    alt=""></div>
+            <div class="header__logo"><img class="header__logo-img" src="img/header-logo2.png" alt=""></div>
+            <div class="header__logo"><img class="header__logo-img" src="img/header-logo3.png" alt=""></div>
+        </div>
+        <div class="header__right">
+            <div class="header__notify">
+                <div class="bell"><i class="fas fa-bell"></i>
+                    <div class="notifications">
+                        <div class="notifications__layer-back"></div>
+                        <div class="notifications__layer-front"></div>
+                        <div class="notifications__wrap">
+                            <p class="notifications__empty">There are no notifications.</p>
+                        </div>
+                        <div class="notifications__asset"><img src="img/dropdown-asset.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <ul class="nav__ul">
+            <li>
+                <a class="nav__link" href="#">Inside</a></li>
+            <li>
+                <div class="separator">|</div>
+            </li>
+            <li><a class="nav__link" href="#">Outside</a></li>
+        </ul>
+    </div>
+    <!--
+    <div class="hero">
+        <div class="hero__left">
+            <div class="hero__notifications">
+            </div>
+        </div>
+        <div class="hero__right"></div>
+    </div>
+    -->
+    <div class="container">
+        <div class="section">
+
+            <div class="section__quick-action">
+                <div class="section__row">
+                    <div class="card card-action fire animated">
+                        <div class="card-action__logo fire-logo"><i class="fas fa-burn"></i></div>
+                        <div class="card-action__text fire-text">fire</div>
+                    </div>
+                    <div class="card card-action water animated">
+                        <div class="card-action__logo fire-water"><i class="fas fa-tint"></i></div>
+                        <div class="card-action__text fire-water">water</div>
+                    </div>
+                    <div class="card card-action light animated">
+                        <div class="card-action__logo fire-light"><i class="far fa-lightbulb"></i></div>
+                        <div class="card-action__text fire-light">light</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="section__info">
+                <div class="section__row">
+                    <div class="card card-info item1 animated">
+                        <div class="card-action__logo fire-logo"><i class="fas fa-bolt"></i></div>
+                        <div class="card-action__text fire-text">electricity</div>
+                    </div>
+                    <div class="card card-info item2 animated">
+                        <div class="card-action__logo fire-logo"><i class="fas fa-cubes"></i></div>
+                        <div class="card-action__text fire-text">napkins</div>
+                    </div>
+                    <div class="card card-info item3 animated">
+                        <div class="card-action__logo fire-logo"><i class="fas fa-volume-up"></i></div>
+                        <div class="card-action__text fire-text">speakers</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="section__interactive">
+                <div class="section__row">
+                    <div class="card card-interactive item4 animated">
+                        <div class="card-action__logo fire-logo"><i class="fas fa-lock-open"></i></div>
+                        <div class="card-action__text fire-text">door locks</div>
+                    </div>
+                    <div class="card card-interactive item5 animated">
+                        <div class="card-action__logo fire-logo"><i class="far fa-window-restore"></i></div>
+                        <div class="card-action__text fire-text">curtains</div>
+                    </div>
+                    <div class="card card-interactive item6 animated">
+                        <div class="card-action__logo fire-logo"><i class="fas fa-wind"></i></div>
+                        <div class="card-action__text fire-text">air conditioning</div>
+                    </div>
+                </div>
+                <div class="section__row">
+                    <div class="card card-interactive"></div>
+                    <div class="card card-interactive"></div>
+                    <div class="card card-interactive"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>-->
+    <script src="vue.js"></script>
+    <script src="Notification.js"></script>
+    <!--
+    <script src="Dropdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    -->
+    <script src="UniversalDropdown.js"></script>
+    <script>
+        new UniversalDropdown('.bell', '.notifications');
+        let notific = new Notification('notiv.json');
+        //let notificationsPush = setInterval("notific.init('notiv.json')", 700);
+        setTimeout("notific.init('notiv.json')", 3000);
+        let t2 = setTimeout("notific.init('notiv.json')", 6000);
+        let t3 = setTimeout("notific.init('notiv.json')", 10000);
+        let statusPush = setInterval(status, 3000);
+        function status() {
+            fetch('status.json')
+                .then(result => result.json())
+                .then(data => {
+                    let datafire = parseInt(Math.random() * 3).toString();
+                    $('.fire').css({
+                        'color': color(datafire),
+                        'border': '2px solid' + colorb(datafire)
+                    });
+                    if (datafire === '2') {
+                        $('.fire').removeClass('flash');
+                        $('.fire').addClass('flash');
+                    }
+                    let datawater = parseInt(Math.random() * 3).toString();
+                    //console.log(color(datawater));
+                    $('.water').css({
+                        'color': color(datawater),
+                        'border': '2px solid' + colorb(datawater)
+                    });
+                    if (datawater === '2') {
+                        $('.water').removeClass('flash');
+                        $('.water').addClass('flash');
+                    }
+                    let datalight = parseInt(Math.random() * 3).toString();
+                    $('.light').css({
+                        'color': color(datalight),
+                        'border': '2px solid' + colorb(datalight)
+                    });
+                    if (datalight === '2') {
+                        $('.light').removeClass('flash');
+                        $('.light').addClass('flash');
+                    }
+                    let dataitem1 = parseInt(Math.random() * 3).toString();
+                    $('.item1').css({
+                        'color': color(dataitem1),
+                        'border': '2px solid' + colorb(dataitem1)
+                    });
+                    if (dataitem1 === '2') {
+                        $('.item1').removeClass('flash');
+                        $('.item1').addClass('flash');
+                    }
+                    let dataitem2 = parseInt(Math.random() * 3).toString();
+                    $('.item2').css({
+                        'color': color(dataitem2),
+                        'border': '2px solid' + colorb(dataitem2)
+                    });
+                    if (dataitem2 === '2') {
+                        $('.item2').removeClass('flash');
+                        $('.item2').addClass('flash');
+                    }
+                    let dataitem3 = parseInt(Math.random() * 3).toString();
+                    $('.item3').css({
+                        'color': color(dataitem3),
+                        'border': '2px solid' + colorb(dataitem3)
+                    });
+                    if (dataitem3 === '2') {
+                        $('.item3').removeClass('flash');
+                        $('.item3').addClass('flash');
+                    }
+                    let dataitem4 = parseInt(Math.random() * 3).toString();
+                    $('.item4').css({
+                        'color': color(dataitem4),
+                        'border': '2px solid' + colorb(dataitem4)
+                    });
+                    if (dataitem4 === '2') {
+                        $('.item4').removeClass('flash');
+                        $('.item4').addClass('flash');
+                    }
+                    let dataitem5 = parseInt(Math.random() * 3).toString();
+                    $('.item5').css({
+                        'color': color(dataitem5),
+                        'border': '2px solid' + colorb(dataitem5)
+                    });
+                    if (dataitem5 === '2') {
+                        $('.item5').removeClass('flash');
+                        $('.item5').addClass('flash');
+                    }
+                    let dataitem6 = parseInt(Math.random() * 3).toString();
+                    $('.item6').css({
+                        'color': color(dataitem6),
+                        'border': '2px solid' + colorb(dataitem6)
+                    });
+                    if (dataitem6 === '2') {
+                        $('.item6').removeClass('flash');
+                        $('.item6').addClass('flash');
+                    }
+                });
+        };
+
+        function color(num) {
+            switch (num) {
+                case '0':
+                    return 'white';
+                case '1':
+                    return '#e8af10';
+                case '2':
+                    return '#e22c0f';
+            }
+        }
+
+        function colorb(num) {
+            switch (num) {
+                case '0':
+                    return '#00000000';
+                case '1':
+                    return '#e8af10';
+                case '2':
+                    return '#e22c0f';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!--
+                            <p class="notifications__empty">There are no notifications.</p>
+                            <div class="notification-item notification-item___alert">
+                                <div class="notification-item__logo"><i class="fas fa-fire"></i></div>
+                                <div class="notification-item__text">
+                                    <div class="notification-item__h">Lorem ipsum dolor sit</div>
+                                    <div class="notification-item__content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Obcaecati ex quae modi laborum, repellat molestias reiciendis
+                                        voluptas maiores nostrum quasi voluptate.</div>
+                                </div>
+                            </div>
+                            <div class="notification-item notification-item___alert">
+                                <div class="notification-item__logo"><i class="fas fa-exclamation-triangle"></i></div>
+                                <div class="notification-item__text">
+                                    <div class="notification-item__h">Lorem ipsum dolor sit</div>
+                                    <div class="notification-item__content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Obcaecati ex quae modi laborum, repellat molestias reiciendis
+                                        voluptas maiores nostrum quasi voluptate.</div>
+                                </div>
+                            </div>
+                            <div class="notification-item">
+                                <div class="notification-item__logo"><i class="fas fa-check"></i></div>
+                                <div class="notification-item__text">
+                                    <div class="notification-item__h">Lorem ipsum dolor sit</div>
+                                    <div class="notification-item__content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Obcaecati ex quae modi laborum, repellat molestias reiciendis
+                                        voluptas maiores nostrum quasi voluptate.</div>
+                                </div>
+                            </div>
+                            <div class="notification-item">
+                                <div class="notification-item__logo"><i class="fas fa-check"></i></div>
+                                <div class="notification-item__text">
+                                    <div class="notification-item__h">Lorem ipsum dolor sit</div>
+                                    <div class="notification-item__content">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Obcaecati ex quae modi laborum, repellat molestias reiciendis
+                                        voluptas maiores nostrum quasi voluptate.</div>
+                                </div>
+                            </div>
+                            -->
